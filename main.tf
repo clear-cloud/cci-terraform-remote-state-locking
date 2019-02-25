@@ -13,6 +13,6 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
   }
 
   tags {
-    Name = "DynamoDB Terraform State Lock Table for ${var.environment}"
+    Name = "DynamoDB Terraform State Lock Table for ${var.product}.${var.environment}"
   }
 }
